@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nawasena - Profile</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap.min.css') }} type="text/css">
+    <link rel="stylesheet" href={{ url_for('static', filename='css/client_side.css') }}  type="text/css">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    
+    <!-- JavaScript -->
+    <script src={{ url_for('static', filename='js/jquery_3.6.0.min.js') }} ></script>
+    <script src={{ url_for('static', filename='js/bootstrap_3.4.1.min.js') }} ></script>
+    
+</head>
+<body id="halamanku" data-spy="scroll" data-target=".navbar" data-offset="60">
+    {% include 'navbar.html' %}
+    
+    <div class="container bg-transparent">
+        <br>  
+        <br>  
+        <br>  
+        
+        <div class="row">
+            <div class="col-md-12">
+                <h1>TENTANG</h1>
+                
+                <section id="tentang">
+                    <h2>Tentang Aplikasi</h2>
+                    <p>Selamat datang di halaman Aplikasi Absensi Nawasena! <br>
+                        Aplikasi ini merupakan bagian dari proyek akhir studi independen di Orbit Future Academy yang bertujuan untuk memberikan solusi inovatif dalam manajemen absensi.</p>
+                </section>
+                
+                <section id="fitur">
+                    <h2>Fitur Utama</h2>
+                    <ul>
+                        <li><strong>Face Recognition:</strong> Dengan teknologi canggih pengenalan wajah, proses absensi menjadi lebih cepat dan akurat.</li>
+                        <li><strong>Antarmuka Pengguna Intuitif:</strong> Antarmuka pengguna yang dirancang dengan baik membuat penggunaan aplikasi menjadi mudah dan menyenangkan.</li>
+                        <li><strong>Riwayat Kehadiran:</strong> Aplikasi menyimpan riwayat kehadiran setiap individu, memudahkan untuk melacak dan menganalisis pola kehadiran.</li>
+                        <li><strong>Keamanan Data:</strong> Kami mengutamakan keamanan data pengguna dengan sistem keamanan tingkat tinggi.</li>
+                    </ul>
+                </section>
+            
+
+                <section id="penggunaan">
+                    <h2>Cara Menggunakan Aplikasi</h2>
+                    <ol>
+                        <li><strong>Registrasi Akun:</strong>
+                            <ul>
+                                <li>Buat akun pengguna dengan informasi yang valid.</li>
+                                <li>Lakukan verifikasi identitas untuk mengaktifkan fitur pengenalan wajah.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Absensi:</strong>
+                            <ul>
+                                <li>Buka aplikasi dan pilih opsi "Absensi".</li>
+                                <li>Tunjukkan wajah Anda ke kamera untuk melakukan absensi.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Pantau Kehadiran:</strong>
+                            <ul>
+                                <li>Cek riwayat kehadiran Anda dan rekan kerja melalui menu "Riwayat Kehadiran".</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </section>
+
+                <section id="hubungi">
+                    <h2>Hubungi Kami</h2>
+                    <p>Jika Anda memiliki pertanyaan atau masukan, jangan ragu untuk menghubungi tim pengembang Nawasena kami. Kami berkomitmen untuk terus meningkatkan kualitas layanan kami.</p>
+                </section>
+
+            </div>
+        </div>
+    </div>
+    {% include 'footer.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

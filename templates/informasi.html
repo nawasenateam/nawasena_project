@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nawasena - Informasi</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap.min.css') }} type="text/css">
+    <link rel="stylesheet" href={{ url_for('static', filename='css/client_side.css') }}  type="text/css">
+    <!-- Icon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <!-- JavaScript -->
+    <script src={{ url_for('static', filename='js/jquery_3.6.0.min.js') }} ></script>
+    <script src={{ url_for('static', filename='js/bootstrap_3.4.1.min.js') }} ></script>
+    
+</head>
+<body id="halamanku" data-spy="scroll" data-target=".navbar" data-offset="60">
+    {% include 'navbar.html' %}
+    
+    <div class="container bg-transparent">
+        <br>  
+        <br>  
+        <br>  
+        
+        <div class="row">
+          <div class="col-md-12">
+            <h1>INFORMASI</h1>
+            <div class="col-md-12">
+              <section id="tentang-aplikasi">
+                  <h2>Tentang Aplikasi</h2>
+                  <p>Selamat datang di halaman resmi Aplikasi Absensi Face Recognition Nawasena di Orbit Future Academy! Aplikasi ini merupakan bagian dari proyek akhir studi independen Nawasena yang bertujuan untuk memberikan solusi inovatif dalam manajemen absensi.</p>
+                  <p><strong>Face Recognition</strong> adalah teknologi yang memungkinkan sistem untuk mengidentifikasi dan mengverifikasi individu berdasarkan ciri-ciri unik pada wajah mereka. Dalam konteks aplikasi absensi kami, Face Recognition digunakan untuk mengenali wajah pengguna dan mencatat kehadiran mereka dengan cepat dan akurat.</p>
+                  <p><strong>Cara Kerja:</strong> Sistem ini menggunakan algoritma K-Nearest Neighbors (KNN) Classifier untuk mengidentifikasi wajah. Pertama, data wajah dari pengguna direkam dan diubah menjadi vektor fitur. Selanjutnya, algoritma KNN membandingkan vektor fitur tersebut dengan vektor fitur wajah yang telah direkam sebelumnya. Dengan memilih wajah terdekat berdasarkan fitur yang mirip, sistem dapat mengenali dan mencocokkan identitas pengguna secara efisien.</p>
+              </section>
+
+              <section id="informasi-tim">
+                
+                <h2>Tim Nawasena</h2>
+                <p>Tim Nawasena adalah kelompok mahasiswa yang berkomitmen untuk menciptakan solusi cerdas dalam manajemen absensi. Dengan pengetahuan dan keahlian yang beragam, kami bersatu untuk menghasilkan aplikasi inovatif ini.</p>
+                <p>Salah satu teknologi kunci yang kami terapkan dalam sistem pengenalan wajah kami adalah <strong>K-Nearest Neighbors (KNN) Classifier</strong>. KNN memungkinkan kami untuk mengklasifikasikan wajah dengan akurasi tinggi, memastikan kehandalan proses absensi secara real-time.</p>
+                <!-- Anda dapat menambahkan informasi tambahan tentang anggota tim dan teknologi lainnya di sini -->
+              </section>
+            </div>
+      
+          </div>
+          
+        </div>
+
+        
+      
+        
+    </div>
+    {% include 'footer.html' %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+/*** 
+
+====================================================================
+	Color Palate Style / Color Switcher Style
+====================================================================
+***/
+
+:root {}
+
+
+.color-palate {
+	background: #ffffff none repeat scroll 0 0;
+	-webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+	-ms-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+	-o-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+	position: fixed;
+	left: -285px;
+	text-align: center;
+	top: 0%;
+	transition: all 0.5s ease 0s;
+	width: 285px;
+	z-index: 999;
+	height: 100%;
+	padding-bottom: 30px;
+}
+
+.color-palate-inner {
+	position: relative;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-transition: all;
+}
+
+/* width */
+.color-palate-inner::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+.color-palate-inner::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+.color-palate-inner::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+.color-palate-inner::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+
+.color-palate-head {
+	background: var(--thm-base) none repeat scroll 0 0;
+	padding: 12px 0;
+}
+
+.color-palate-head h6 {
+	font-weight: 500;
+	color: #ffffff !important;
+}
+
+.color-palate-head h6,
+.secondary-head h6 {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0px;
+	margin-top: 4px;
+	text-transform: uppercase;
+}
+
+.palate {
+	background: var(--thm-base) none repeat scroll 0 0;
+	display: block;
+	float: left;
+	height: 45px;
+	margin: 0 2.5% 12px;
+	width: 20%;
+	cursor: pointer;
+	position: relative;
+}
+
+.colors-list .active::after {
+	background: url(../images/icons/tick.png) center center no-repeat !important;
+	background-repeat: no-repeat;
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.various-color {
+	overflow: hidden;
+	padding: 20px 0 15px;
+}
+
+.colors-list {
+	margin: 0 20px;
+}
+
+.secondary-head {
+	background: #222222 none repeat scroll 0 0;
+	padding: 14px 0;
+}
+
+.secondary-color {
+	padding: 23px 0;
+}
+
+.secondary-colors-list {
+	margin: 0 80px;
+}
+
+.palate-foo {
+	color: #777777;
+	font-size: 13px;
+	font-weight: 400;
+	padding: 0 30px;
+	line-height: 1.8em;
+}
+
+.palate-foo span {
+	display: block;
+	padding-top: 20px;
+	margin-top: 5px;
+	border-top: 1px dotted #b2b2b2;
+}
+
+
+.palate.default-color {
+	background: #FF6C1E none repeat scroll 0 0;
+}
+
+.palate.blue-color {
+	background: #246af4 none repeat scroll 0 0;
+}
+
+.palate.brown-color {
+	background: #964B00 none repeat scroll 0 0;
+}
+
+.palate.green-color {
+	background: #3ead3c none repeat scroll 0 0;
+}
+
+.palate.orange-color {
+	background: #ffb347 none repeat scroll 0 0;
+}
+
+.palate.purple-color {
+	background: #bb54e1 none repeat scroll 0 0;
+}
+
+.palate.teal-color {
+	background: #44A9AA none repeat scroll 0 0;
+}
+
+.palate.yellow-color {
+	background: #fed000 none repeat scroll 0 0;
+}
+
+
+
+
+
+
+
+
+
+.color-trigger {
+	background: var(--thm-base) none repeat scroll 0 0;
+	cursor: pointer;
+	height: 50px;
+	right: -46px;
+	position: absolute;
+	top: 7%;
+	width: 46px;
+	padding-top: 6px;
+
+}
+
+.color-trigger .fa-fw {
+	animation: fa-spin 2s linear infinite;
+	-webkit-animation: fa-spin 2s linear infinite;
+	-moz-animation: fa-spin 2s linear infinite;
+	-ms-animation: fa-spin 2s linear infinite;
+	-o-animation: fa-spin 2s linear infinite;
+}
+
+.color-trigger:before {
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.color-trigger i {
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.color-palate.visible-palate {
+	left: 0px;
+}
+
+.color-palate h6 {
+	font-weight: 500;
+	color: #000000;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.color-palate .rtl-version {
+	padding-top: 10px;
+	padding-bottom: 0px;
+}
+
+.color-palate .box-version {
+	padding-top: 10px;
+	padding-bottom: 0px;
+}
+
+.color-palate .option-box {
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.color-palate .option-box>li {
+	position: relative;
+	color: #ffffff;
+	width: 40%;
+	margin: 0px 3px;
+	cursor: pointer;
+	margin-bottom: 9px;
+	padding: 8px 12px;
+	font-size: 12px;
+	display: inline-block;
+	background-color: var(--thm-base);
+	text-transform: uppercase;
+}
+
+@-webkit-keyframes rotation {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+
+	to {
+		-webkit-transform: rotate(359deg);
+	}
+}
+
+.color-palate .demos-carousel {
+	position: relative;
+	padding: 15px 20px 0px;
+}
+
+.color-palate .demos-carousel .demos-title {
+	position: relative;
+	color: var(--thm-black);
+	font-weight: 700;
+	margin-bottom: var(--margin-bottom-10);
+}
+
+.color-palate .demos-carousel .owl-dots {
+	display: none;
+}
+
+.color-palate .demos-carousel .owl-nav {
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	z-index: 99999;
+	width: 100%;
+	margin-top: -15px;
+	transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.color-palate .demos-carousel .owl-prev {
+	position: absolute;
+	left: -15px;
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	border-radius: 50px;
+	font-size: 14px;
+	color: var(--thm-base);
+	transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	background-color: var(--white-color);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
+}
+
+.color-palate .demos-carousel .owl-next {
+	position: absolute;
+	right: -15px;
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	border-radius: 50px;
+	font-size: 14px;
+	color: var(--thm-black);
+	transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	background-color: var(--thm-base);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
+}
+
+.color-palate .demos-carousel .owl-prev:hover,
+.color-palate .demos-carousel .owl-next:hover {
+	color: var(--thm-white);
+	background-color: var(--thm-base);
+}
+
+.color-palate .demos-carousel li {
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, 0.10);
+}
+
+.color-palate .purchase-box {
+	position: relative;
+	padding: 10px 15px 0px;
+}
+
+.color-palate .purchase-box .theme-btn {
+	position: relative;
+	padding: 12px 36px;
+	margin-top: 20px;
+}

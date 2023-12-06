@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Judul Halaman -->
+	<title>Orbit Future Academy</title>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Icon -->
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	<!-- CSS -->
+	<link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap.min.css') }} type="text/css">
+	<link rel="stylesheet" href={{ url_for('static', filename='css/client_side.css') }}  type="text/css">
+	
+	<!-- JavaScript -->
+	<script src={{ url_for('static', filename='js/jquery_3.6.0.min.js') }} ></script>
+	<script src={{ url_for('static', filename='js/bootstrap_3.4.1.min.js') }} ></script>
+</head>
+
+<body id="halamanku" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+	<!-- Navigation Bar -->
+	{% include 'navbar.html' %}
+
+	<div class="container">
+		<!-- Bagian Halaman (aplikasi) -->
+		<div id="aplikasi" class="container-fluid bg-transparent">
+			
+			<div class="row">
+				
+        <div class="app-container">
+          <div class="col-sm-6 ">
+            <br>
+            <br>
+            <div id="webcam-container">
+              <video id="webcam" autoplay playsinline class="mirror"></video>
+            </div>
+            <div id="image-container" style="display: none;" >
+              <img src="" alt="" width="100%">
+            </div>
+            
+          </div>
+  
+          <div class="col-sm-6 ">
+            <br>
+            <!-- Deskripsi Aplikasi -->
+            <h1>Sistem Absensi Online</h1>
+            <h4>Menggunakan Face Recognition</h4><br>
+            <p class="data_name" style="display: none;">
+              Selamat datang, XXX
+            </p>
+            <p class="data_message" style="display: none;">
+              
+            </p>
+            <div class="alert alert-success msg_checkin" style="display: none;">
+              
+            </div>
+            <br>
+            <div id="load-container" style="display: none;" >Please Wait..</div>
+            <!-- Tombol Mulai -->
+            <nav id="navgo" class="navbar" style="background-color:transparent;">
+              <ul class="nav nav-pills">
+                <li class="nav-item item_check_in">
+                  <a class="btn btn-default btn-lg" id="check_in">Check In</a>
+                </li>
+                <li class="nav-item item_check_out">
+                  <a class="btn btn-default btn-lg" id="check_out">Check Out</a>
+                </li>
+                <li class="nav-item item-log" style="display: none;">
+                  <a class="btn btn-success btn-lg" id="check_log">Lihat Data</a>
+                </li>
+                <li class="nav-item item-keluar" style="display: none;">
+                  <a class="btn btn-danger btn-lg" id="keluar">Keluar</a>
+                </li>
+                <li class="nav-item item-daftar" style="display: none;">
+                  <a class="btn btn-default btn-lg" id="daftar">Daftar</a>
+                </li>
+                
+              </ul>
+            </nav>
+            <input type="hidden" name="data_hasil" id="data_hasil">
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="app_log"></div>
+
+        </div>
+				
+			</div>
+			<br>
+		</div>
+		
+		
+		
+		
+
+	</div>
+  {% include 'footer.html' %}
+	
+  
+  <script>
+      // Ambil elemen video
+      const webcam = document.getElementById('webcam');
+      const check_in_btn = document.getElementById('check_in');
+      const check_out_btn = document.getElementById('check_out');
+      
+      // Fungsi check in
+      function check_in() {
+          const canvas = document.createElement('canvas');
+          canvas.width = webcam.videoWidth;
+          canvas.height = webcam.videoHeight;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(webcam, 0, 0, canvas.width, canvas.height);
+          // Mengambil data gambar sebagai URL
+          const photoDataUrl = canvas.toDataURL('image/jpeg');
+          // Kirim data gambar ke server menggunakan jQuery AJAX
+          $.ajax({
+              type: 'POST',
+              url: '/check_in', // Ganti dengan URL endpoint yang sesuai
+              dataType: 'json',
+              data: {
+                  photo: photoDataUrl
+              },
+              beforeSend:function(){
+                // Munculkan Pre-loader 
+                $('#webcam-container').hide();
+                $('#image-container > img').attr('src', photoDataUrl);
+                $('#image-container').show();
+                $('#load-container').show();
+              },
+              success: function(response) {
+                  // Sembunyikan Pre-loader
+                  $('#load-container').hide();
+                  //data_response = $.parseJSON(response)
+                  if(response.hasil){
+                    // Tampilkan Hasil Prediksi
+                    $('#data_hasil').val(response.hasil);
+                    $('.msg_checkin').html(response.message_timestamp).show();
+                    $('.data_name').html(response.message_person).show();
+                    $('#webcam-container').hide();
+                    $('#image-container,.item-log,.item-keluar').show();
+                    $('#image-container > img').attr('src', 'data:image/jpeg;base64,'+response.img_captured);
+                    $('.item_check_in,.item_check_out').hide();
+                    stopWebcam();
+                    delete_files();
+                  }else{
+                    console.log("Tidak Ditemukan")
+                  }
+                  // Lakukan tindakan lanjutan sesuai kebutuhan Anda
+              },
+              error: function(error) {
+                  console.error('Gagal mengirim gambar ke server:', error);
+              }
+          });
+      }
+      // Fungsi Check out
+      function check_out() {
+          const canvas = document.createElement('canvas');
+          canvas.width = webcam.videoWidth;
+          canvas.height = webcam.videoHeight;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(webcam, 0, 0, canvas.width, canvas.height);
+          // Mengambil data gambar sebagai URL
+          const photoDataUrl = canvas.toDataURL('image/jpeg');
+          // Kirim data gambar ke server menggunakan jQuery AJAX
+          $.ajax({
+            type: 'POST',
+            url: '/check_out', // Ganti dengan URL endpoint yang sesuai
+            dataType: 'json',
+            data: {
+              photo: photoDataUrl
+            },
+            beforeSend:function(){
+              $('#webcam-container').hide();
+              //console.log(photoDataUrl)
+              $('#image-container > img').attr('src', photoDataUrl);
+              $('#image-container').show();
+              $('#load-container').show();
+            },
+            success: function(response) {
+              $('#load-container').hide();
+              //data_response = $.parseJSON(response)
+              if(response.hasil){
+                // Tampilkan Hasil Prediksi
+                $('#data_hasil').val(response.hasil);
+                $('.msg_checkin').html(response.message_timestamp).show();
+                $('.data_name').html(response.message_person).show();
+                $('#webcam-container').hide();
+                $('#image-container,.item-log,.item-keluar').show();
+                $('#image-container > img').attr('src', 'data:image/jpeg;base64,'+response.img_captured);
+                $('.item_check_in,.item_check_out').hide();
+                stopWebcam();
+                delete_files();
+              }else{
+                console.log("Tidak Ditemukan")
+              }
+              // Lakukan tindakan lanjutan sesuai kebutuhan Anda
+            },
+            error: function(error) {
+              console.error('Gagal mengirim gambar ke server:', error);
+            }
+          });
+      }
+      
+      // Mengaktifkan webcam
+      async function initWebcam() {
+          try {
+              const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+              webcam.srcObject = stream;
+              videoStream = stream; // Simpan referensi stream
+          } catch (error) {
+              console.error('Gagal mengaktifkan webcam:', error);
+          }
+      }
+      // Me-nonaktifkan webcam
+      function stopWebcam() {
+          if (videoStream) {
+              const tracks = videoStream.getTracks();
+              tracks.forEach(track => track.stop());
+              videoStream = null;
+              webcam.srcObject = null;
+          }
+        }
+      
+      function delete_files(){
+        $.ajax({
+            type: 'POST',
+            url: '/deleteTestingFiles', // Ganti dengan URL endpoint yang sesuai
+            
+            beforeSend:function(){
+              $('#load-container').show();
+            },
+            success: function(response) {
+              $('#load-container').hide();
+              // Lakukan tindakan lanjutan sesuai kebutuhan Anda
+            },
+            error: function(error) {
+                console.error('Gagal menghapus gambar:', error);
+            }
+        });
+      }
+        // Memulai streaming webcam saat dokumen dimuat
+      $(document).ready(function() {
+          initWebcam();
+      });
+      // Menambahkan event listener untuk tombol capture
+      check_in_btn.addEventListener('click', check_in);
+      check_out_btn.addEventListener('click', check_out);
+      $(function(){
+        $(document).on("click", "#check_log", function(e) {
+          
+          var data_hasil = $('#data_hasil').val();
+          $.ajax({
+              type: 'POST',
+              url: '/get_data_user', // Ganti dengan URL endpoint yang sesuai
+              data : {
+                data_user : data_hasil
+              },
+              beforeSend:function(){
+                $('#load-container').show();
+              },
+              success: function(response) {
+                $('#load-container').hide();
+                $('.app_log').html(response);
+                
+                // Lakukan tindakan lanjutan sesuai kebutuhan Anda
+              },
+              error: function(error) {
+                  console.error('Gagal mengirim gambar ke server:', error);
+              }
+          });
+          
+        });
+
+        $(document).on("click", "#keluar", function(e) {
+          top.location.reload();
+        });
+      })
+  </script>
+</body>
+</html>

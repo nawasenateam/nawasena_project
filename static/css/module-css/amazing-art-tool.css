@@ -1,0 +1,240 @@
+/*** 
+
+====================================================================
+	Amazing Art Tool
+====================================================================
+
+***/
+.amazing-art-tool {
+    position: relative;
+    display: block;
+    padding: 63px 0 0;
+}
+
+.amazing-art-tool__left {
+    position: relative;
+    display: block;
+    margin-left: 90px;
+    margin-right: 65px;
+}
+
+.amazing-art-tool__left-content {
+    position: relative;
+    display: block;
+}
+
+.amazing-art-tool__title {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--thm-white);
+    line-height: 56px;
+    margin-bottom: 14px;
+}
+
+.amazing-art-tool__points-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    margin-bottom: 31px;
+}
+
+.amazing-art-tool__points {
+    position: relative;
+    display: block;
+}
+
+.amazing-art-tool__points li {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.amazing-art-tool__points li+li {
+    margin-top: 4px;
+}
+
+.amazing-art-tool__points li .icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.amazing-art-tool__points li .icon span {
+    position: relative;
+    display: inline-block;
+    color: #BDBFD4;
+    font-size: 20px;
+}
+
+.amazing-art-tool__points li .text {
+    margin-left: 18px;
+}
+
+.amazing-art-tool__points li .text p {
+    color: var(--thm-white);
+}
+
+.amazing-art-tool__points--two {
+    margin-left: 75px;
+}
+
+.amazing-art-tool__btn-box {
+    position: relative;
+    display: block;
+}
+
+.amazing-art-tool__btn {
+    font-weight: 600;
+    color: var(--thm-primary);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.amazing-art-tool__btn span {
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    padding-left: 15px;
+    top: 2px;
+}
+
+.amazing-art-tool__btn:hover {
+    color: var(--thm-base);
+}
+
+.amazing-art-tool__right {
+    position: relative;
+    display: block;
+    margin-top: 13px;
+    margin-left: 11px;
+    margin-right: 117px;
+    z-index: 1;
+}
+
+.amazing-art-tool__right:before {
+    content: "";
+    position: absolute;
+    top: -38px;
+    left: 60px;
+    right: -30px;
+    bottom: 45px;
+    border-radius: 16px;
+    border: 1px solid #4B4B70;
+    background: linear-gradient(180deg, rgba(23, 24, 37, 0.85) 0%, rgba(23, 24, 37, 0.00) 101.72%);
+    z-index: -1;
+}
+
+.amazing-art-tool__browser-dot {
+    position: absolute;
+    top: -20px;
+    left: 85px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.amazing-art-tool__browser-dot li {
+    position: relative;
+    display: block;
+    height: 10px;
+    width: 10px;
+    background: #F16C7A;
+    border-radius: 50%;
+}
+
+.amazing-art-tool__browser-dot li:nth-child(2) {
+    background: #49C3E8;
+}
+
+.amazing-art-tool__browser-dot li:nth-child(3) {
+    background: #FFD160;
+}
+
+.amazing-art-tool__browser-dot li+li {
+    margin-left: 7px;
+}
+
+.amazing-art-tool__shape-2 {
+    position: absolute;
+    bottom: 65px;
+    left: 99px;
+    background: linear-gradient(103deg, #00E3F2 8.08%, #0000F2 31.54%, #F87D7D 60.38%, #FF2828 89.73%);
+    opacity: 0.35;
+    filter: blur(50px);
+    width: 400px;
+    height: 320px;
+    transform: rotate(150.217deg);
+    z-index: -1;
+}
+
+.amazing-art-tool__right .row {
+    --bs-gutter-x: 14px;
+}
+
+.row.amazing-art-tool__img-list {
+    position: relative;
+}
+
+.row.amazing-art-tool__img-list li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.amazing-art-tool__img-single {
+    position: relative;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.amazing-art-tool__img {
+    position: relative;
+    display: block;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.amazing-art-tool__img:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background-color: rgba(var(--thm-black-rgb), .60);
+    transition: all 700ms ease;
+    transform: translateY(-100%);
+    z-index: 1;
+}
+
+.amazing-art-tool__img-single:hover .amazing-art-tool__img:before {
+    transform: translateY(0%);
+}
+
+.amazing-art-tool__img img {
+    width: 100%;
+    border-radius: 15px;
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .7s;
+    transition-property: all;
+}
+
+.amazing-art-tool__img-single:hover .amazing-art-tool__img img {
+    transform: scale(1.1) rotate(2deg);
+}
+
+
+
+
+
+
+/* End */

@@ -1,0 +1,218 @@
+/*** 
+
+====================================================================
+	Testimonial One
+====================================================================
+
+***/
+.testimonial-one {
+    position: relative;
+    display: block;
+    padding: 120px 0 0;
+    z-index: 1;
+}
+
+.testimonial-one:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 315px;
+    background: linear-gradient(180deg, rgba(16, 16, 34, 0.00) 0%, rgba(16, 16, 34, 0.76) 13.28%, #101022 53.79%, #101022 79.45%);
+    z-index: 1;
+}
+
+.testimonial-one__btn-box {
+    position: absolute;
+    display: block;
+    text-align: center;
+    bottom: 135px;
+    left: 0;
+    right: 0;
+}
+
+.testimonial-one__btn {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 39px 15px;
+    border: 1px solid var(--thm-bdr-color);
+}
+
+.testimonial-one .section-title__title i {
+    font-size: 41px;
+    color: #fac632;
+}
+
+.testimonial-one__single {
+    position: relative;
+    display: block;
+    border-radius: 16px;
+    border: 1px solid #3C3C77;
+    background: #15152E;
+    padding: 36px 25px 39px;
+    margin-bottom: 24px;
+}
+
+.testimonial-one__client-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-one__client-img {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+}
+
+.testimonial-one__client-img img {
+    width: auto;
+    border-radius: 50%;
+}
+
+.testimonial-one__name-box {
+    position: relative;
+    display: block;
+    margin-left: 16px;
+}
+
+.testimonial-one__name {
+    color: var(--thm-white);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.testimonial-one__sub-title {
+    color: #BDBFD4;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    margin-top: 1px;
+}
+
+.testimonial-one__title {
+    color: var(--thm-white);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-top: 18px;
+    margin-bottom: 15px;
+}
+
+.testimonial-one__icon-and-ratting {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.testimonial-one__icon {
+    position: relative;
+    display: block;
+}
+
+.testimonial-one__icon img {
+    width: auto;
+}
+
+.testimonial-one__ratting {
+    position: relative;
+    display: block;
+    border-radius: 8px;
+    background: #212144;
+    padding: 6px 9px;
+}
+
+.testimonial-one__ratting p {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--thm-white);
+    line-height: 14px;
+}
+
+.testimonial-one__ratting p span {
+    margin-left: 6px;
+    color: #fac924;
+}
+
+.testimonial-one__single-5 {
+    margin-top: -54px;
+}
+
+.testimonial-one__single-6 {
+    margin-top: -54px;
+}
+
+.testimonial-one__single-8 {
+    margin-top: -26px;
+}
+
+.testimonial-one__single-9 {
+    margin-top: -23px;
+}
+
+.testimonial-one__single-11 {
+    margin-top: -23px;
+}
+
+.testimonial-one__single-12 {
+    margin-top: -26px;
+}
+
+/*** 
+
+====================================================================
+	Testimonial Two
+====================================================================
+
+***/
+.testimonial-two {
+    position: relative;
+    display: block;
+    padding: 120px 0 0;
+}
+
+.testimonial-two__sec-title {
+    font-size: 40px;
+    color: var(--thm-white);
+    font-weight: 600;
+    line-height: 56px;
+    text-align: center;
+    margin-bottom: 66px;
+}
+
+.testimonial-two__sec-title span {
+    color: var(--thm-primary);
+}
+
+.testimonial-two__sec-title i {
+    font-size: 41px;
+    color: #fac632;
+}
+
+/*** 
+
+====================================================================
+	Testimonial Three
+====================================================================
+
+***/
+.testimonial-three {
+    padding: 0 0 0;
+}
+
+.testimonial-three .testimonial-two__sec-title span {
+    color: var(--thm-base);
+}
+
+
+
+
+
+/* End */

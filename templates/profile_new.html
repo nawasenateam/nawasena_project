@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Nawasena - Anggota</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	
+	<!-- Color Themes -->
+	<link id="theme-color-file" href="static/css/color-themes/blue-color.css" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<!-- Responsive -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	<!-- Stylesheets -->
+	<link href="static/css/bootstrap.css" rel="stylesheet">
+	<link href="static/css/style.css" rel="stylesheet">
+	<link href="static/css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body class="body-bg-color xbox-layout">
+
+	<div class="page-wrapper">
+
+		{% include 'header.html' %}
+
+    <!-- Career Page Top Start -->
+		<section class="career-page-top">
+			<div class="container">
+				<div class="career-page-top__inner">
+					<div class="career-page-top__single">
+						
+						<div class="career-page-top__content-box">
+							
+							<div class="career-page-top__content-box-two">
+								
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h1>Nawasena Team </h1>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="{{ url_for('static', filename='images/profile/Firly_Putri_Rifansya.png') }}" alt="">
+                        </div>
+                        <h2>Firly Putri Rifansya</h2>
+                        <p>S1 Ilmu Komunikasi Universitas Pancasila</p>
+                        (Project Manager, UI/UX Designer)
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                          <img src="{{ url_for('static', filename='images/profile/Ahmad_Fikriansyah.png') }}" alt="">
+                        </div>
+                        <h2>Ahmad Fikriansyah</h2>
+                        <p>S1 Sistem Informasi STMIK Jakarta STI&K</p>
+                        (AI Developer, Back-End Developer, Quality Assurance Tester)
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="{{ url_for('static', filename='images/profile/Bunga_Saphira_Syasti.png') }}" alt="">
+                        </div>
+                        <h2>Bunga Saphira Syasti</h2>
+                        <p>S1 Ilmu Hukum Universitas Pancasila</p>
+                        (Database Administrator, Content Writer)
+                    </div>
+                  </div>
+                </div>  
+                  
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                          <img src="{{ url_for('static', filename='images/profile/Tri_Mulyadi.png') }}" alt="">
+                        </div>
+                        <h2>Tri Mulyadi</h2>
+                        <p>S1 Sistem Informasi Universitas Saintek Muhammadiyah</p>
+                        (AI Developer, Front-End Developer, Quality Assurance Tester)
+                    </div>
+                  </div>
+        
+                  <div class="col-md-4">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="{{ url_for('static', filename='images/profile/Huwaida_Rofifah.png') }}" alt="">
+                        </div>
+                        <h2>Huwaida Rofifah</h2>
+                        <p>S1 Bahasa Inggris Sekolah Tinggi Bahasa Asing LIA Jakarta</p>
+                        (Content Writer, Database Administrator)
+                    </div>
+                  </div>
+        
+                  <div class="col-md-4">
+                    <div class="profile-card">
+                      <div class="profile-image">
+                          <img src="{{ url_for('static', filename='images/profile/Fajar_Eka_Maulana.jpg') }}" alt="">
+                      </div>
+                      <h2>Fajar Eka Maulana</h2>
+                      <p>S1 Teknik Elektro Universitas Singaperbangsa Karawang</p>
+                      (Database Administrator, Content Writer)
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col mx-auto text-center">
+                  <div style="">
+                    <!-- Konten Anda disini -->
+                    <h1>Supervised By :</h1>
+                    <div class="col-md-4 offset-md-4">
+                      <div class="profile-card">
+                          <div class="profile-image">
+                            <img src="{{ url_for('static', filename='images/profile/coach_angel.png') }}" alt="">
+                          </div>
+                          <h5 style="color:#fff">Angel Metanosa Afinda, S.Kom., M.Kom.</h5>
+                          <p>Orbit Future Academy</p>
+                          (AI Coach)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-12">
+                    <h1> </h1>
+                  </div>
+                </div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<!-- Career Page End Start -->
+
+
+		{% include 'footer_new.html' %}
+
+
+
+	</div>
+	<!-- End PageWrapper -->
+
+	<!-- Scroll To Top -->
+	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fas fa-arrow-up fa-fw"></span></div>
+  <script src="static/js/jquery.js"></script>
+  <script src="static/js/01-bootstrap.min.js"></script>
+  <script src="static/js/02-bootstrap-select.min.js"></script>
+  <script src="static/js/07-wow.js"></script>
+  <script src="static/js/12-gsap.min.js"></script>
+  
+  <script src="static/js/script.js"></script>
+	<style>
+    .career-page-top__content-box-two ul
+    {
+        list-style: initial;
+        margin: initial;
+        padding: 0 0 0 40px;
+    }
+
+    .career-page-top__content-box-two li
+    {
+        display: list-item;
+    }
+  </style>
+
+
+	<!--[if lt IE 9]><script src="static/https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+	<!--[if lt IE 9]><script src="static/js/respond.js"></script><![endif]-->
+
+</body>
+
+</html>

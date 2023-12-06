@@ -1,0 +1,152 @@
+/*** 
+
+====================================================================
+	Copywriting Tool
+====================================================================
+
+***/
+.copywriting-tool {
+    position: relative;
+    display: block;
+    padding: 140px 0 0;
+    z-index: 1;
+}
+
+.copywriting-tool .container {
+    max-width: 1110px;
+}
+
+.copywriting-tool__inner {
+    position: relative;
+    display: block;
+}
+
+.copywriting-tool__title-box {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.copywriting-tool__title {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--thm-white);
+    line-height: 58px;
+    margin-bottom: 36px;
+}
+
+.copywriting-tool__title span {
+    color: var(--thm-base);
+}
+
+.copywriting-tool__btn-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.copywriting-tool__btn-two {
+    border: 1px solid var(--thm-bdr-color);
+    background: #15152C;
+    margin-left: 30px;
+}
+
+.copywriting-tool__btn-two:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 8px;
+    background: linear-gradient(211deg, #8F79FF 13.4%, #426BFF 118.74%);
+    transform: scaleX(0.1) rotateX(90deg);
+    -webkit-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    z-index: -1;
+}
+
+.copywriting-tool__btn-two:hover:before {
+    transform: scaleX(1.0) rotateX(0deg);
+    -webkit-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+.copywriting-tool__img-box {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.copywriting-tool__img-box img {
+    width: 100%;
+}
+
+.copywriting-tool-shape-1 {
+    position: absolute;
+    bottom: 112px;
+    left: 0;
+    border-radius: 50%;
+    opacity: 0.6;
+    background: linear-gradient(93deg, #430054 7.07%, #FE577F 97.81%);
+    filter: blur(114px);
+    width: 371px;
+    height: 371px;
+    z-index: -1;
+}
+
+.copywriting-tool-shape-2 {
+    position: absolute;
+    top: 0;
+    left: 380px;
+    border-radius: 50%;
+    opacity: 0.95;
+    background: linear-gradient(208deg, #9F9A1A 19.19%, #0096A0 70.68%);
+    filter: blur(90px);
+    width: 320px;
+    height: 320px;
+    z-index: -1;
+}
+
+.copywriting-tool-shape-3 {
+    position: absolute;
+    top: 50px;
+    right: -95px;
+    border-radius: 50%;
+    opacity: 0.6;
+    background: linear-gradient(180deg, #6243FF 0%, #FF2828 100%);
+    filter: blur(90px);
+    width: 423px;
+    height: 423px;
+    z-index: -1;
+}
+
+.copywriting-tool__rating-box {
+    position: relative;
+    display: block;
+    margin-top: 46px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The End */

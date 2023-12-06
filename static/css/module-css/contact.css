@@ -1,0 +1,235 @@
+/*** 
+
+====================================================================
+	Contact One
+====================================================================
+
+***/
+
+.contact-one {
+    position: relative;
+    display: block;
+    padding: 0 0 120px;
+}
+
+.contact-one__left {
+    position: relative;
+    display: block;
+    margin-top: 140px;
+    margin-right: 80px;
+}
+
+.contact-one__left-content {
+    position: relative;
+    display: block;
+}
+
+.contact-one__title-box {
+    position: relative;
+    display: block;
+    margin-bottom: 49px;
+}
+
+.contact-one__title-box h3 {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--thm-white);
+    line-height: 50px;
+    margin-bottom: 15px;
+}
+
+.contact-one__title-box p {
+    font-size: 14px;
+}
+
+.contact-one__contact-list {
+    position: relative;
+    display: block;
+}
+
+.contact-one__contact-list li {
+    position: relative;
+    display: flex;
+}
+
+.contact-one__contact-list li+li {
+    margin-top: 22px;
+}
+
+.contact-one__contact-list li .icon {
+    position: relative;
+    display: inline-block;
+    top: 8px;
+}
+
+.contact-one__contact-list li .icon span {
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    color: var(--thm-gradient-color2);
+}
+
+.contact-one__contact-list li .text {
+    margin-left: 40px;
+}
+
+.contact-one__contact-list li .text p {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 500;
+    color: var(--thm-white);
+}
+
+.contact-one__contact-list li .text p a {
+    position: relative;
+    display: flex;
+    color: var(--thm-white);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.contact-one__contact-list li .text p a:hover {
+    color: var(--thm-gradient-color2);
+}
+
+.contact-one__social {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+}
+
+.contact-one__social a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: #3C3C77;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.contact-one__social a:hover {
+    color: var(--thm-gradient-color2);
+}
+
+.contact-one__social a+a {
+    margin-left: 25px;
+}
+
+.contact-one__right {
+    position: relative;
+    display: block;
+    margin-left: 68px;
+}
+
+.contact-one__form-box {
+    position: relative;
+    display: block;
+    background-color: var(--thm-main-bg);
+    border: 1px solid #2E2F45;
+    border-radius: var(--thm-border-radius);
+    padding: 93px 65px 100px;
+}
+
+.contact-one__form-title {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--thm-white);
+    margin-bottom: 34px;
+}
+
+.contact-one__form-box .form-group {
+    position: relative;
+    display: block;
+}
+
+.contact-one__form-box .form-group+.form-group {
+    margin-top: 30px;
+}
+
+.contact-one__form-label {
+    color: #7781A6;
+    margin-bottom: 7px;
+}
+
+.contact-one__form-box .form-group input[type="text"],
+.contact-one__form-box .form-group input[type="email"],
+.contact-one__form-box .form-group textarea {
+    height: 56px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #2E2F45;
+    border-radius: var(--thm-border-radius);
+    outline: none;
+    padding-left: 60px;
+    padding-right: 20px;
+    font-size: 16px;
+    color: #7781A6;
+    font-weight: 400;
+}
+
+.contact-one__form-icon {
+    position: absolute;
+    top: 48px;
+    left: 25px;
+}
+
+.contact-one__form-icon i {
+    font-size: 15px;
+    color: #747694;
+}
+
+.contact-one__form-box .form-group textarea {
+    height: 144px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.contact-one__form-box .form-group.text-message-box {
+    height: 148px;
+}
+
+.contact-one__form-box .button-box {
+    position: relative;
+    display: block;
+    padding-top: 30px;
+}
+
+.contact-one__btn {
+    width: 100%;
+    padding: 15px 30px 15px;
+    font-size: 16px;
+}
+
+
+/***
+====================================================================
+	Goolge Map
+====================================================================
+
+***/
+
+.goolge-map {
+    position: relative;
+    display: block;
+    padding: 0 0 120px;
+    z-index: 1;
+}
+
+.goolge-map__outer {
+    position: relative;
+    display: block;
+}
+
+.google-map__one {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 825px;
+}
+
+
+
+
+/* End */

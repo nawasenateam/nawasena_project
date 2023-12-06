@@ -1,0 +1,127 @@
+/*** 
+
+====================================================================
+	Faq One
+====================================================================
+
+***/
+.faq-one {
+	position: relative;
+	display: block;
+}
+
+.faq-one .container {
+	max-width: 875px;
+}
+
+.faq-one__inner {
+	position: relative;
+	display: block;
+}
+
+.faq-one__inner .faq-one-accrodion .accrodion {
+	position: relative;
+	display: block;
+	background-color: var(--thm-main-bg);
+	border: 1px solid var(--thm-bdr-color);
+	border-radius: var(--thm-border-radius);
+	-webkit-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.faq-one__inner .faq-one-accrodion .accrodion-title {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	padding: 20px 30px 20px;
+	transition: all 200ms linear;
+	transition-delay: 0.1s;
+	padding-right: 25px;
+}
+
+.faq-one__inner .faq-one-accrodion .accrodion-title h4 {
+	margin: 0;
+	font-size: 20px;
+	color: var(--thm-gray);
+	font-weight: 500;
+	line-height: 30px;
+	position: relative;
+	-webkit-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.faq-one__inner .faq-one-accrodion .accrodion.active .accrodion-title h4 {
+	color: var(--thm-white);
+}
+
+.faq-one__inner .faq-one-accrodion .accrodion+.accrodion {
+	margin-top: 15px;
+}
+
+.faq-one__inner .faq-one-accrodion .accrodion-title h4::before {
+	content: "\e901";
+	font-family: 'icomoon' !important;
+	font-size: 13px;
+	color: var(--thm-gray);
+	position: absolute;
+	top: 50%;
+	right: 0;
+	line-height: 15px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-webkit-transition: all 500ms ease;
+	transition: all 500ms ease;
+	text-align: center;
+	width: 21px;
+	height: 21px;
+}
+
+.faq-one__inner .faq-one-accrodion .accrodion.active .accrodion-title h4::before {
+	content: "\e901";
+	color: var(--thm-white);
+	border-radius: 50%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: rotate(-180deg);
+}
+
+.faq-one__inner .faq-one-accrodion .accrodion-content {
+	position: relative;
+	padding-bottom: 27px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.faq-one__inner .faq-one-accrodion .accrodion-content p {
+	margin: 0;
+}
+
+.faq-one__inner .faq-one-accrodion .accrodion-content p a {
+	color: var(--thm-gradient-color2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End */

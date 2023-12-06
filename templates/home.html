@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Judul Halaman -->
+	<title>Orbit Future Academy</title>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Icon -->
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap.min.css') }} type="text/css">
+	<link rel="stylesheet" href={{ url_for('static', filename='css/client_side.css') }}  type="text/css">
+	
+	<!-- JavaScript -->
+	<script src={{ url_for('static', filename='js/jquery_3.6.0.min.js') }} ></script>
+	<script src={{ url_for('static', filename='js/bootstrap_3.4.1.min.js') }} ></script>
+</head>
+
+<body id="halamanku" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+	<!-- Navigation Bar -->
+	{% include 'navbar.html' %}
+	
+	<div class="container">
+		<!-- Bagian Halaman (aplikasi) -->
+		<div id="aplikasi" class="container-fluid">
+			
+			<div class="row">
+				
+				
+				<div class="col-sm-6">
+					<br>
+					<br>
+					<div id="video_element"></div>
+				</div>
+
+				<div class="col-sm-6">
+					<!-- Deskripsi Aplikasi -->
+					<h2>Sistem Absensi Online</h2>
+					<h4>Menggunakan Face Recognition</h4><br>
+					<p style="text-align: justify;text-justify: inter-word;">
+						
+					</p>
+					<br>
+
+					<!-- Tombol Mulai -->
+					<nav id="navgo" class="navbar" style="background-color:#ffffff;z-index: 0;">
+						<ul class="nav nav-pills">
+							<li class="nav-item">
+								<a class="btn btn-default btn-lg" href="#check_in" id="startAbsensi" style="background-color:#28ace5">Check In</a>
+							</li>
+							<li class="nav-item">
+								<a class="btn btn-default btn-lg" href="#check_out" style="background-color:#28ace5">Check Out</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<br>
+		</div>
+		
+		<!-- Footer -->
+		<footer class="container-fluid text-center">
+			<a href="#halamanku" title="To Top">
+				<span class="glyphicon glyphicon-chevron-up"></span>
+			</a>
+			<p>Orbit Future Academy <br> <a href="https://orbitfutureacademy.id/">orbitfutureacademy.id</a></p>
+		</footer>
+	</div>
+	
+
+	<!-- JavaScript untuk Animasi Scroll dan Prediksi Model -->
+	<script  src={{ url_for('static', filename='js/client_side.js') }}></script>
+	<script>
+    document.getElementById('startAbsensi').addEventListener('click', function() {
+        // Logika untuk memulai proses absensi menggunakan face recognition
+        // Mengecek apakah browser mendukung getUserMedia
+        if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
+            // Menggunakan Promise untuk meminta izin akses kamera
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function (stream) {
+                    // Menyimpan aliran video dari kamera ke elemen video HTML
+                    var videoElement = document.createElement('video');
+                    videoElement.srcObject = stream;
+                    videoElement.play();
+										videoElement.width = 500;
+                    const video = document.getElementById('video_element');
+                    video.appendChild(videoElement); // Menambahkan elemen video ke halaman
+                })
+                .catch(function (error) {
+                    console.error('Gagal mengakses kamera: ', error);
+                });
+        } else {
+            console.error('Browser tidak mendukung getUserMedia');
+        }
+    });
+	</script>
+</body>
+</html>

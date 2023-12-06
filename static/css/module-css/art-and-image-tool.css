@@ -1,0 +1,89 @@
+/*** 
+
+====================================================================
+	Testimonial One
+====================================================================
+
+***/
+.art-and-image-tool {
+    position: relative;
+    display: block;
+    padding: 57px 0 0;
+}
+
+.art-and-image-tool__left {
+    position: relative;
+    display: block;
+    margin-left: 74px;
+    margin-right: 49px;
+}
+
+.art-and-image-tool__img {
+    position: relative;
+    display: block;
+}
+
+.art-and-image-tool__img img {
+    width: 100%;
+}
+
+.art-and-image-tool__right {
+    position: relative;
+    display: block;
+    margin-left: 75px;
+    margin-right: 76px;
+    margin-top: 193px;
+}
+
+.art-and-image-tool__right-content {
+    position: relative;
+    display: block;
+}
+
+.art-and-image-tool__title {
+    font-size: 40px;
+    color: var(--thm-white);
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.art-and-image-tool__title span {
+    color: var(--thm-primary);
+}
+
+.art-and-image-tool__text {
+    margin-top: 16px;
+    margin-bottom: 31px;
+}
+
+.art-and-image-tool__btn-box {
+    position: relative;
+    display: block;
+}
+
+.art-and-image-tool__btn {
+    font-weight: 600;
+    color: var(--thm-primary);
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.art-and-image-tool__btn span {
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    padding-left: 15px;
+    top: -2px;
+}
+
+.art-and-image-tool__btn:hover {
+    color: var(--thm-base);
+}
+
+
+
+
+/* End */

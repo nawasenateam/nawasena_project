@@ -1,0 +1,180 @@
+/*** 
+
+====================================================================
+	Brand One
+====================================================================
+
+***/
+.brand-one {
+    position: relative;
+    display: block;
+    padding: 94px 0 132px;
+    z-index: 1;
+}
+
+.brand-one__title-box {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.brand-one__title {
+    color: var(--thm-white);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: center;
+    position: relative;
+    display: block;
+}
+
+.brand-one__title span {
+    color: var(--thm-gradient-color2);
+}
+
+.brand-one__brand-list-box {
+    position: relative;
+    display: block;
+    padding-left: 65px;
+    padding-right: 55px;
+    padding-top: 66px;
+}
+
+.brand-one__list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-one__list li {
+    position: relative;
+    display: block;
+}
+
+.brand-one__brand-img {
+    position: relative;
+    display: block;
+}
+
+.brand-one__brand-img img {
+    width: auto;
+}
+
+.brand-one__list-2 {
+    margin-top: 49px;
+}
+
+.brand-one__shape-1 {
+    position: absolute;
+    left: 223px;
+    top: 6px;
+}
+
+.brand-one__shape-1 img {
+    width: auto;
+}
+
+.brand-one__shape-2 {
+    position: absolute;
+    right: 206px;
+    top: 6px;
+}
+
+.brand-one__shape-2 img {
+    width: auto;
+}
+
+.brand-one__shape-3 {
+    position: absolute;
+    left: 575px;
+    bottom: -60px;
+}
+
+.brand-one__shape-3 img {
+    width: auto;
+}
+
+
+
+/*** 
+
+====================================================================
+	Brand Two
+====================================================================
+
+***/
+.brand-two {
+    position: relative;
+    display: block;
+    padding: 94px 0 132px;
+    z-index: 1;
+}
+
+.brand-two__title-box {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.brand-two__title {
+    color: var(--thm-white);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: center;
+    position: relative;
+    display: block;
+}
+
+.brand-two__title span {
+    color: var(--thm-extra);
+}
+
+.brand-two__brand-list-box {
+    position: relative;
+    display: block;
+    padding-left: 65px;
+    padding-right: 55px;
+    padding-top: 66px;
+}
+
+.brand-two__list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-two__list li {
+    position: relative;
+    display: block;
+}
+
+.brand-two__brand-img {
+    position: relative;
+    display: block;
+}
+
+.brand-two__brand-img img {
+    width: auto;
+}
+
+
+/*** 
+
+====================================================================
+	Brand Three
+====================================================================
+
+***/
+
+.brand-three {
+    padding: 94px 0 0px;
+}
+
+.brand-three .brand-two__title span {
+    color: var(--thm-base);
+}
+
+/* End */

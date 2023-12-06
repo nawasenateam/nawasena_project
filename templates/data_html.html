@@ -1,0 +1,17 @@
+<h3>Log Kehadiran</h3>
+<table>
+    <tr>
+        <th>Tanggal</th>
+        <th>Nama Mahasiswa</th>
+        <th>Check In</th>
+        <th>Check Out</th>
+    </tr>
+    {% for row in data_kehadiran %}  
+    <tr>
+        <td>{{ row[0] }}</td>
+        <td>{{ row[1] }}</td>
+        <td>{{ row[2] }}</td>
+        <td>{{ row[3] }}</td>
+    </tr>
+    {% endfor %}
+</table>

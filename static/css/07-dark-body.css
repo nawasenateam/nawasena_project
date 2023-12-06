@@ -1,0 +1,314 @@
+/* Lizar Business HTML Template */
+
+/* RTL Style CSS Code */
+
+.dark-body,
+.dark-body .main-header.main-header-two.fixed-header .header-two-lower,
+.dark-body .feature-two__inner:before,
+.dark-body .services-two:before,
+.dark-body .faq-one__left,
+.dark-body .services-three__img::before,
+.dark-body .contact-one__right,
+.dark-body .contact-one__right:before,
+.dark-body .main-header .header-lower:before,
+.dark-body .pricing-one__shape-1,
+.dark-body .main-header .header-lower:before {
+    background-color: #252638;
+}
+
+
+
+
+
+
+
+
+.dark-body .header-upper__contact-info,
+.dark-body .header-upper__contact-info:before,
+.dark-body .thm-btn,
+.dark-body .partners-one__inner,
+.dark-body .what-we-are-one__counter-single,
+.dark-body .what-we-are-one:before,
+.dark-body .team-one__content,
+.dark-body .project-one__nav-control,
+.dark-body .testimonial-one,
+.dark-body .blog-one__content,
+.dark-body .contact-info-one,
+.dark-body .header-two-upper,
+.dark-body .feature-two:before,
+.dark-body .testimonial-two,
+.dark-body .header-three-upper__contact-info,
+.dark-body .header-three-upper__contact-info:before,
+.dark-body .testimonial-three,
+.dark-body .team-four,
+.dark-body .team-details__social,
+.dark-body .project-details__info,
+.dark-body .about-sidebar,
+.dark-body .about-sidebar .content-box  {
+    background-color: #282943;
+}
+
+
+
+
+
+
+
+
+.dark-body h2,
+.dark-body .header-upper__contact-info li .content h5,
+.dark-body .header-upper__contact-info li .content h5 a,
+.dark-body  .about-one__points-content h4,
+.dark-body .about-one__solution-text,
+.dark-body .about-one__founder-name,
+.dark-body .what-we-are-one__counter-count-box h3,
+.dark-body .what-we-are-one__counter-letter,
+.dark-body .progress-levels .progress-box .inner .text,
+.dark-body .team-one__name a,
+.dark-body .project-one__control-wrap .swiper-counter div,
+.dark-body .blog-one__title a,
+.dark-body .contact-info-one__content h5,
+.dark-body .contact-info-one__content h5 a,
+.dark-body .main-header.main-header-two .main-menu .navigation>li>a,
+.dark-body .header-upper-two__search .search-box-btn,
+.dark-body .header-upper-two__content h5,
+.dark-body .header-upper-two__content h5 a,
+.dark-body .feature-two__title a,
+.dark-body .about-two__points li .content h4,
+.dark-body .counter-one__content-count-box h3,
+.dark-body .counter-one__content-letter,
+.dark-body .team-two__title a,
+.dark-body .accordion-box .block .acc-btn,
+.dark-body .testimonial-two__contact-btn,
+.dark-body .blog-two__title a,
+.dark-body .header-three-upper__contact-info li .content h5,
+.dark-body .header-three-upper__contact-info li .content h5 a,
+.dark-body .about-three__experience-count h3,
+.dark-body .about-three__experience-count-plus,
+.dark-body .services-three__title a,
+.dark-body .project-details__info-title,
+.dark-body .what-we-are-two__points li .content h3,
+.dark-body .project-details__title-1,
+.dark-body .project-details__points-title,
+.dark-body .pricing-one__single:hover .pricing-one__icon span,
+.dark-body .services-details__title-1,
+.dark-body .services-details__benefits-title,
+.dark-body .services-details__benefits-points li p,
+.dark-body .blog-details__title-1,
+.dark-body .blog-details__social-list a,
+.dark-body .author__content h4,
+.dark-body .author__social a,
+.dark-body .comment-one__title,
+.dark-body .sidebar__title,
+.dark-body .sidebar__post-title a,
+.dark-body .about-sidebar h4,
+.dark-body .about-one_list li:before {
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dark-body .services-one__icon-box,
+.dark-body .services-one__single,
+.dark-body .services-one__content-box,
+.dark-body .about-one,
+.dark-body .team-one__single:hover .team-one__shape-1, 
+.dark-body .team-one__single.active .team-one__shape-1,
+.dark-body .team-one__content,
+.dark-body .project-one__nav-control,
+.dark-body .contact-info-one__logo a,
+.dark-body .counter-one__list,
+.dark-body .team-two__content,
+.dark-body .accordion-box .block,
+.dark-body .accordion-box .block .content,
+.dark-body .header-three-upper__contact-info li .icon,
+.dark-body .header-three-upper__search .search-box-btn,
+.dark-body .header-three-upper__social a,
+.dark-body .services-three__content,
+.dark-body .contact-one__input-box input[type="text"], 
+.dark-body .contact-one__input-box input[type="email"],
+.dark-body .contact-one__input-box textarea,
+.dark-body .contact-one__input-box .bootstrap-select>.dropdown-toggle,
+.dark-body .team-four,
+.dark-body .header-upper__contact-info li .icon,
+.dark-body .what-we-are-three,
+.dark-body .services-details__services-list li a,
+.dark-body .blog-details__tags a,
+.dark-body .blog-details__social-list a,
+.dark-body .author,
+.dark-body .sidebar__search,
+.dark-body .sidebar__category-list li a,
+.dark-body .sidebar__post-list,
+.dark-body .sidebar__tag-list {
+    border-color: rgba(255,255,255,0.20);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dark-body .partners-one__single:before,
+.dark-body .testimonial-one__carousel.owl-carousel .owl-dots .owl-dot,
+.dark-body .counter-one__list:before,
+.dark-body .partners-two__single:before,
+.dark-body .testimonial-three__points li:before,
+.dark-body .carousel-dot-style.owl-carousel .owl-dot.active {
+    background-color: rgba(255,255,255,0.20);
+}
+
+
+
+
+
+
+
+
+
+body.dark-body,
+.dark-body .footer-widget__explore-list li a,
+.dark-body .footer-widget__availability-list li a,
+.dark-body .main-footer__bottom-text,
+.dark-body .main-footer__bottom-menu li a,
+.dark-body .accordion-box p,
+.dark-body .about-three__video-title,
+.dark-body .services-three__read-more,
+.dark-body .services-details__services-list li a,
+.dark-body .services-details__services-list li a span,
+.dark-body .services-details__download-list li a,
+.dark-body .blog-details__quote i,
+.dark-body .comment-one__content h3,
+.dark-body .comment-one__content span,
+.dark-body .sidebar__category-list li a {
+    color: rgba(255,255,255, 0.70);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dark-body .about-two__satisfied-client-text,
+.dark-body p.services-two__text,
+.dark-body p.process-one__text-1,
+.dark-body .testimonial-two__text-1,
+.dark-body .blog-two__user-name,
+.dark-body .about-three__client-text,
+.dark-body .testimonial-three__text,
+.dark-body .team-details__sub-title,
+.dark-body .what-we-are-two__client-text,
+.dark-body .project-details__info-left p,
+.dark-body .project-details__info-right span{
+    color: rgba(0,0,0, 0.70);
+}
+
+
+
+
+
+
+
+.dark-body .what-we-are-one__counter-icon span {
+    color: #ffffff;
+    opacity: 0.03;
+}
+
+.dark-body .testimonial-one__carousel.owl-carousel .owl-dot.active,
+.dark-body .contact-info-one__logo a {
+    background-color: #ffffff;
+}
+
+.dark-body .header-upper__search:before {
+    left: -30px;
+}
+
+.dark-body .testimonial-two__side-img:before {
+    display: none;
+}
+
+.dark-body .contact-info-one__logo a img {
+    filter: brightness(0);
+}
+
+.dark-body .section-title-shape-1 img {
+    filter: brightness(0);
+}
+
+.dark-body .section-title-shape-2 img {
+    filter: brightness(0);
+}
+
+.dark-body .main-header-two__logo-box a img {
+    filter: contrast(0.5);
+}
+
+.dark-body .faq-one__shape-1 img {
+    filter: invert(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

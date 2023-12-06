@@ -1,0 +1,109 @@
+/*** 
+
+====================================================================
+	Image Generator Tools
+====================================================================
+
+***/
+.image-generator-tools {
+    position: relative;
+    display: block;
+    padding: 96px 0 0;
+}
+
+.image-generator-tools__inner {
+    position: relative;
+    display: block;
+    background-color: var(--thm-main-bg);
+    border-radius: 16px;
+    border: 1px solid var(--thm-bdr-color);
+    padding: 117px 90px 100px;
+    text-align: center;
+}
+
+.image-generator-tools__title {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--thm-white);
+    line-height: 57px;
+    margin-bottom: 65px;
+}
+
+.image-generator-tools__title span {
+    color: var(--thm-primary);
+}
+
+.image-generator-tools__main-content {
+    position: relative;
+    display: block;
+}
+
+.image-generator-tools__main-content .row {
+    --bs-gutter-x: 90px;
+}
+
+.image-generator-tools__single {
+    position: relative;
+    display: block;
+    margin-bottom: 22px;
+}
+
+.image-generator-tools__icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    margin: 0 auto 14px;
+    border: 1px solid var(--thm-bdr-color);
+    background-color: var(--thm-main-bg);
+    border-radius: var(--thm-border-radius);
+}
+
+.image-generator-tools__icon span {
+    position: relative;
+    display: inline-block;
+    font-size: 34px;
+    color: var(--thm-primary);
+    transition: all 500ms linear;
+    transition-delay: 0.1s;
+    transform: scale(1);
+}
+
+.image-generator-tools__single:hover .image-generator-tools__icon span {
+    transform: scale(.9);
+}
+
+.image-generator-tools__title-2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    margin-bottom: 15px;
+}
+
+.image-generator-tools__title-2 a {
+    color: var(--thm-white);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.image-generator-tools__title-2 a:hover {
+    color: var(--thm-base);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End */

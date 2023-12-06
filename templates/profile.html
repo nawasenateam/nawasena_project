@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nawasena - Profile</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap.min.css') }} type="text/css">
+    <link rel="stylesheet" href={{ url_for('static', filename='css/client_side.css') }}  type="text/css">
+    <!-- Icon -->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <!-- JavaScript -->
+    <script src={{ url_for('static', filename='js/jquery_3.6.0.min.js') }} ></script>
+    <script src={{ url_for('static', filename='js/bootstrap_3.4.1.min.js') }} ></script>
+</head>
+<body >
+    {% include 'navbar.html' %}
+    
+    <div class="container bg-transparent">
+        <br>  
+        <br>  
+        <br>  
+        
+        <div class="row">
+          <div class="col-md-12">
+            <h1>NAWASENA TEAM</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="{{ url_for('static', filename='images/profile/Firly_Putri_Rifansya.png') }}" alt="">
+                </div>
+                <h2>Firly Putri Rifansya</h2>
+                <p>S1 Ilmu Komunikasi Universitas Pancasila</p>
+                (Project Manager, UI/UX Designer)
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="profile-card">
+                <div class="profile-image">
+                  <img src="{{ url_for('static', filename='images/profile/Ahmad_Fikriansyah.png') }}" alt="">
+                </div>
+                <h2>Ahmad Fikriansyah</h2>
+                <p>S1 Sistem Informasi STMIK Jakarta STI&K</p>
+                (AI Developer, Back-End Developer, Quality Assurance Tester)
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="{{ url_for('static', filename='images/profile/Bunga_Saphira_Syasti.png') }}" alt="">
+                </div>
+                <h2>Bunga Saphira Syasti</h2>
+                <p>S1 Ilmu Hukum Universitas Pancasila</p>
+                (Database Administrator, Content Writer)
+            </div>
+          </div>
+        </div>  
+          
+        <div class="row">
+          <div class="col-md-4">
+            <div class="profile-card">
+                <div class="profile-image">
+                  <img src="{{ url_for('static', filename='images/profile/Tri_Mulyadi.png') }}" alt="">
+                </div>
+                <h2>Tri Mulyadi</h2>
+                <p>S1 Sistem Informasi Universitas Saintek Muhammadiyah</p>
+                (AI Developer, Front-End Developer, Quality Assurance Tester)
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="{{ url_for('static', filename='images/profile/Huwaida_Rofifah.png') }}" alt="">
+                </div>
+                <h2>Huwaida Rofifah</h2>
+                <p>S1 Bahasa Inggris Sekolah Tinggi Bahasa Asing LIA Jakarta</p>
+                (Content Writer, Database Administrator)
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="profile-card">
+              <div class="profile-image">
+                  <img src="{{ url_for('static', filename='images/profile/Fajar_Eka_Maulana.jpg') }}" alt="">
+              </div>
+              <h2>Fajar Eka Maulana</h2>
+              <p>S1 Teknik Elektro Universitas Singaperbangsa Karawang</p>
+              (Database Administrator, Content Writer)
+            </div>
+          </div>
+        </div>
+          
+        
+
+        
+      
+        
+    </div>
+
+    {% include 'footer.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static/fonts/lato_latin_ext.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static/fonts/lato_latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/static/fonts/glyphicons-halflings-regular.eot'),
+       url('/static/fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+       url('/static/fonts/glyphicons-halflings-regular.woff') format('woff'),
+       url('/static/fonts/glyphicons-halflings-regular.ttf') format('truetype')
+}
+
+/* 
+body {
+	line-height: 1.8;
+	color: #818181;
+	background-image: url('../images/bkg.jpg'); 
+}
+*/
+body {
+	font: 400 15px Lato, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+	background-color: #f5f5f5;
+}
+
+h2 {
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #28ace5;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+h3 {
+	font-size: 22px;
+	line-height: 1.375em;
+	color: #28ace5;
+	font-weight: 500;
+	margin-bottom: 30px;
+}  
+
+h4 {
+	font-size: 19px;
+	line-height: 1.375em;
+	color: #28ace5;
+	font-weight: 400;
+	margin-bottom: 30px;
+}  
+
+.container-fluid {
+	padding: 60px 50px;
+}
+
+.bg-blue {
+	background-color: #bde2f9;
+}
+
+.logo-small {
+	color: #28ace5;
+	font-size: 50px;
+}
+
+.logo {
+	color: #28ace5;
+	font-size: 200px;
+}
+
+.navbar {
+	margin-bottom: 0;
+	background-color: #28ace5;
+	z-index: 9999;
+	border: 0;
+	font-size: 12px !important;
+	line-height: 1.42857143 !important;
+	letter-spacing: 4px;
+	border-radius: 0;
+	position: relative;
+}
+
+.navbar li a, .navbar .navbar-brand {
+	color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+	color: #28ace5 !important;
+	background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+	color: #fff !important;
+}
+  
+footer .glyphicon {
+	font-size: 20px;
+	margin-bottom: 20px;
+	color: #28ace5;
+}
+  
+.slideanim {
+	visibility:hidden;
+}
+
+.slide {
+	animation-name: slide;
+	-webkit-animation-name: slide;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	visibility: visible;
+}
+
+@keyframes slide {
+	0% {
+	  opacity: 0;
+	  transform: translateY(70%);
+	} 
+	100% {
+	  opacity: 1;
+	  transform: translateY(0%);
+	}
+}
+
+@-webkit-keyframes slide {
+	0% {
+	  opacity: 0;
+	  -webkit-transform: translateY(70%);
+	} 
+	100% {
+	  opacity: 1;
+	  -webkit-transform: translateY(0%);
+	}
+}
+  
+.slider {
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #28ace5;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #28ace5;
+  cursor: pointer;
+}
+
+
+/* NEW ADD */
+/* CSS untuk menyesuaikan gambar dalam kartu profil */
+.profile-card {
+	display: flex;
+	/* background-color: #0000005d; */
+	background-color: #24232359;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-ms-border-radius:5px;
+	-o-border-radius:5px;
+}
+.profile-card h2{
+	color: #fff ;
+	margin-bottom: 5px;
+}
+.profile-card {
+	color: #ebe7e7 ;
+}
+.profile-image {
+	width: 70px; /* Atur lebar gambar menjadi 100px */
+	height: 70px; /* Atur tinggi gambar menjadi 100px */
+	overflow: hidden; /* Mengatasi potensi masalah overflow jika gambar terlalu besar */
+}
+
+.profile-image img {
+	width: 100%; /* Memastikan gambar mengisi seluruh lebar dari elemen .profile-image */
+	height: auto; /* Gambar akan menyesuaikan tingginya sesuai dengan lebar yang ditetapkan */
+	object-fit: cover; /* Gambar akan menutupi area sesuai dengan aspek rasio tanpa merusaknya */
+}
+
+#webcam-container {
+  position: relative;
+  width: 100%; /* Lebar container 100% */
+  padding-bottom: 75%; /* Perbandingan aspek video 4:3 (misalnya) */
+  overflow: hidden;
+}
+
+#webcam {
+  position: absolute;
+  width: 100%; /* Lebar video 100% dari container */
+  height: 100%; /* Tinggi video 100% dari container */
+  object-fit: cover; /* Video akan di-stretch atau crop sesuai container */
+}
+
+#image-container > img {
+  width: 100%; /* Lebar container 100% */
+}
+
+
+
+
+/* NAVBAR */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #59c2f0;
+}
+
+/*================================================= CSS untuk Page Aplikasi ===================================================== */
+.bg-transparent {
+	padding: 5px;
+	background-color: #24232359;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	
+}
+.container h1{
+	text-align: center;
+}
+#navgo a{
+	background-color: #28ace5;
+}
+.app-container{
+	padding:15px;
+}
+.app-container p{
+	color: #ffffff;
+}
+.app-container h1{
+	color: #ffffff;
+	text-align: left;
+}
+.mirror {
+    transform: scaleX(-1);
+}
+/*================================================= CSS untuk Page data ===================================================== */
+h3 {
+	color: #ffffff;
+}
+
+table {
+	width: 100%;
+	margin: 0 auto;
+	border-collapse: collapse;
+	background-color: white;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+	border: 1px solid #000;
+}
+
+th, td {
+	padding: 10px;
+}
+td{
+	color:#000000;
+}
+th {
+	background-color: #333;
+	color: white;
+}
+
+.container{
+	color:#ffffff;
+}
+
+
+html #footer {
+	bottom: 0;
+	width: 100%;
+	position: absolute;
+	height: 50px;
+	background-color: #28ace5;
+	.footer-block {
+		margin: 10px 0;
+	}
+}

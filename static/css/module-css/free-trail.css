@@ -1,0 +1,123 @@
+/*** 
+
+====================================================================
+	Free Trail
+====================================================================
+
+***/
+.free-trail {
+	position: relative;
+	display: block;
+	padding: 120px 0 0;
+	z-index: 1;
+}
+
+.free-trail__wrap {
+	position: relative;
+	display: block;
+	border-radius: 16px;
+	border: 1px solid #ACDA49;
+	background: #0F0F24;
+	padding: 90px 0 90px;
+	z-index: 1;
+}
+
+.free-trail__shape-3 {
+	position: absolute;
+	top: 20px;
+	left: 110px;
+	right: 110px;
+	bottom: 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	z-index: -1;
+}
+
+.free-trail__start-1 {
+	position: absolute;
+	top: 109px;
+	left: 571px;
+}
+
+.free-trail__start-1 img {
+	width: auto;
+}
+
+.free-trail__start-2 {
+	position: absolute;
+	top: 122px;
+	right: 569px;
+}
+
+.free-trail__start-2 img {
+	width: auto;
+}
+
+.free-trail__start-3 {
+	position: absolute;
+	top: 230px;
+	left: 427px;
+}
+
+.free-trail__start-3 img {
+	width: auto;
+}
+
+.free-trail__start-4 {
+	position: absolute;
+	top: 230px;
+	right: 408px;
+}
+
+.free-trail__start-4 img {
+	width: auto;
+}
+
+.free-trail__inner {
+	position: relative;
+	display: block;
+	text-align: center;
+}
+
+.free-trail__shape-1 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 660px;
+	height: 304px;
+	background: linear-gradient(98deg, #00E3F2 5.55%, #FF9B00 32.85%, #F00 57.49%, #BD00FF 86.75%);
+	opacity: 0.1;
+	filter: blur(75px);
+	z-index: -1;
+}
+
+.free-trail__inner .section-title {
+	margin-bottom: 19px;
+}
+
+.free-trail__btn-box {
+	position: relative;
+	display: block;
+	margin-top: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End */

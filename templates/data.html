@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nawasena - Data</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap.min.css') }} type="text/css">
+    <link rel="stylesheet" href={{ url_for('static', filename='css/client_side.css') }}  type="text/css">
+    
+    <!-- JavaScript -->
+    <script src={{ url_for('static', filename='js/jquery_3.6.0.min.js') }} ></script>
+    <script src={{ url_for('static', filename='js/bootstrap_3.4.1.min.js') }} ></script>
+    
+</head>
+<body id="halamanku" data-spy="scroll" data-target=".navbar" data-offset="60">
+    {% include 'navbar.html' %}
+    
+    <div class="container bg-transparent">
+        <br>  
+        <br>  
+        <br>  
+        
+        <h1>Log Kehadiran</h1>
+        <table>
+            <tr>
+                <th>Tanggal</th>
+                <th>Nama Mahasiswa</th>
+                <th>Check In</th>
+                <th>Check Out</th>
+            </tr>
+            {% for row in data_kehadiran[1:] %}  {# Mulai dari indeks 1 untuk mengabaikan baris judul pertama #}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <br><br>
+        
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

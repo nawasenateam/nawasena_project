@@ -1,0 +1,216 @@
+
+/*** 
+====================================================================
+	Css Files
+====================================================================
+***/
+@import url('01-global.css');
+@import url('module-css/header.css');
+@import url('module-css/footer.css');
+@import url('module-css/feature.css');
+@import url('module-css/solutions.css');
+@import url('module-css/pricing.css');
+@import url('module-css/brand.css');
+@import url('module-css/collaboration.css');
+@import url('module-css/testimonial.css');
+@import url('module-css/faq.css');
+@import url('module-css/free-trail.css');
+@import url('module-css/copywriting-tool.css');
+@import url('module-css/how-tool-work.css');
+@import url('module-css/counter.css');
+@import url('module-css/case.css');
+@import url('module-css/banner.css');
+@import url('module-css/gallery.css');
+@import url('module-css/image-generator-tools.css');
+@import url('module-css/art-and-image-tool.css');
+@import url('module-css/amazing-art-tool.css');
+@import url('module-css/create-something.css');
+@import url('module-css/page-title.css');
+@import url('module-css/about.css');
+@import url('module-css/video.css');
+@import url('module-css/team.css');
+@import url('module-css/ai-product.css');
+@import url('module-css/login.css');
+@import url('module-css/blog.css');
+@import url('module-css/career.css');
+@import url('module-css/404.css');
+
+
+
+
+@import url('02-bootstrap-select.min.css');
+@import url('03-owl.css');
+@import url('04-animate.css');
+@import url('05-rtl.css');
+@import url('06-custom-animate.css');
+@import url('07-dark-body.css');
+@import url('08-font-awesome.css');
+@import url('09-icomoon.css');
+@import url('10-jarallax.css');
+@import url('11-preloader.css');
+@import url('12-swiper.min.css');
+@import url('13-odometer-theme-default.css');
+@import url('14-jquery-ui.css');
+@import url('15-magnific-popup.css');
+@import url('../fonts/reey-font/stylesheet.css');
+
+
+
+/*** 
+====================================================================
+	
+====================================================================
+***/
+
+
+/* Sticy Header */
+.want-sticky-header .main-header.fixed-header {
+	position: relative !important;
+	display: none;
+}
+
+
+/* Box Layout */
+.box-layout .page-wrapper {
+	max-width: 1390px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 15px;
+	overflow: hidden;
+	background-color: var(--thm-body-bg);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
+}
+
+.box-layout:before {
+	position: fixed;
+	content: '';
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: url(../images/partners/thm-pattern-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.box-layout .slider-one_social-icons {
+	display: none;
+}
+
+.box-layout .main-header-two__inner {
+	margin: 0 0px;
+}
+
+
+/* Tambahan Tri 20/11/2023 */
+#webcam-container {
+  position: relative;
+  width: 100%; /* Lebar container 100% */
+  padding-bottom: 75%; /* Perbandingan aspek video 4:3 (misalnya) */
+  overflow: hidden;
+}
+
+#webcam {
+  position: absolute;
+  width: 100%; /* Lebar video 100% dari container */
+  height: 100%; /* Tinggi video 100% dari container */
+  object-fit: cover; /* Video akan di-stretch atau crop sesuai container */
+}
+
+#image-container > img {
+  width: 100%; /* Lebar container 100% */
+}
+
+/*================================================= CSS untuk Page data ===================================================== */
+.app_log h3 {
+	color: #ffffff;
+}
+table {
+	width: 100%;
+	margin: 0 auto;
+	border-collapse: collapse;
+	background-color: white;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+	border: 1px solid #000;
+}
+
+th, td {
+	padding: 10px;
+}
+td{
+	color:#000000;
+}
+th {
+	background-color: #333;
+	color: white;
+}
+
+.career-page-top__content-box-two{
+	padding: 120px 0 112px;
+}
+.career-page-top__content-box-two h1{
+	font-size: 32px;
+  font-weight: 500;
+  color: var(--thm-white);
+  
+}
+
+.career-page-top__content-box-two h2{
+	font-size: 28px;
+  font-weight: 500;
+  color: var(--thm-white);
+  
+}
+.career-page-top__content-box-two ul {
+	list-style: 0 !important;
+}
+/* Untuk versi mobile */
+@media only screen and (max-width: 767px) {
+    .career-page-top__content-box-two {
+        padding: 20px 0;
+    }
+    .solutions-one{
+        padding: 20px 0;
+
+    }
+}
+
+/* CSS untuk menyesuaikan gambar dalam kartu profil */
+.profile-card {
+	display: flex;
+	/* background-color: #0000005d; */
+	background-color: #24232359;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-ms-border-radius:5px;
+	-o-border-radius:5px;
+}
+.profile-card h2{
+	color: #fff ;
+	margin-bottom: 5px;
+}
+.profile-card {
+	color: #ebe7e7 ;
+}
+.profile-image {
+	width: 170px; /* Atur lebar gambar menjadi 100px */
+	height: 170px; /* Atur tinggi gambar menjadi 100px */
+	overflow: hidden; /* Mengatasi potensi masalah overflow jika gambar terlalu besar */
+}
+
+.profile-image img {
+	width: 100%; /* Memastikan gambar mengisi seluruh lebar dari elemen .profile-image */
+	height: auto; /* Gambar akan menyesuaikan tingginya sesuai dengan lebar yang ditetapkan */
+	object-fit: cover; /* Gambar akan menutupi area sesuai dengan aspek rasio tanpa merusaknya */
+}

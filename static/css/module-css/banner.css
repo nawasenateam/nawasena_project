@@ -1,0 +1,99 @@
+/*** 
+
+====================================================================
+	Banner One
+====================================================================
+
+***/
+.banner-one {
+	position: relative;
+	display: block;
+	padding: 145px 0 0;
+}
+
+.banner-one__left {
+	position: relative;
+	display: block;
+}
+
+.banner-one__sub-title {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--thm-extra);
+	line-height: 20px;
+}
+
+.banner-one__title {
+	font-size: 40px;
+	font-weight: 600;
+	color: var(--thm-white);
+	line-height: 50px;
+	margin-top: 16px;
+	margin-bottom: 22px;
+}
+
+.banner-one__title span {
+	position: relative;
+	display: inline-block;
+	color: var(--thm-extra);
+	z-index: 1;
+}
+
+.banner-one__title span:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 2px;
+	background-color: var(--thm-extra);
+	z-index: -1;
+}
+
+.banner-one__text-1 {
+	margin-bottom: 72px;
+}
+
+.banner-one__text-1 span {
+	color: var(--thm-gradient-color2);
+}
+
+.banner-one__btn-box {
+	position: relative;
+	display: block;
+}
+
+.banner-one__right {
+	position: relative;
+	display: block;
+	margin-top: 7px;
+}
+
+.banner-one__img {
+	position: relative;
+	display: block;
+}
+
+.banner-one__img img {
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End */

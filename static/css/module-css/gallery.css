@@ -1,0 +1,194 @@
+/*** 
+
+====================================================================
+	Gallery One
+====================================================================
+
+***/
+.gallery-one {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.gallery-one__title-box {
+    position: relative;
+    display: block;
+    text-align: center;
+    z-index: 5;
+}
+
+.gallery-one__title-one {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--thm-white);
+    line-height: 48px;
+    margin-bottom: 18px;
+}
+
+.gallery-one__title-two {
+    background: linear-gradient(90deg, #00CB88 22.86%, #E1F763 78.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 48px
+}
+
+.gallery-one__inner {
+    position: relative;
+    display: block;
+    margin-top: -55px;
+    z-index: 1;
+}
+
+.gallery-one__curved-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background: linear-gradient(38deg, #00CB88 15.51%, #E1F763 122.15%);
+    z-index: 5;
+}
+
+
+@keyframes textRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.gallery-one__curved-circle .curved-circle {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--thm-black);
+    text-transform: capitalize;
+    letter-spacing: 0.700em;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: var(--thm-font-two);
+    height: 120px !important;
+    width: 120px;
+    transform: rotate(120deg);
+    animation: textRotate 10s linear 0s forwards infinite alternate;
+}
+
+.gallery-one__video-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
+}
+
+.gallery-one__video-icon {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--thm-black);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.gallery-one__btn-box {
+    position: absolute;
+    bottom: 55px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 5;
+}
+
+.gallery-one__list {
+    position: relative;
+}
+
+.gallery-one__list li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-one__single {
+    position: relative;
+    display: block;
+    margin-bottom: 24px;
+}
+
+.gallery-one__img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.gallery-one__img:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background-color: rgba(var(--thm-black-rgb), .60);
+    transition: all 700ms ease;
+    transform: translateY(-100%);
+    z-index: 1;
+}
+
+.gallery-one__single:hover .gallery-one__img:before {
+    transform: translateY(0%);
+}
+
+.gallery-one__img img {
+    width: 100%;
+    border-radius: 16px;
+    transition-delay: .1s;
+    transition-timing-function: ease-in-out;
+    transition-duration: .7s;
+    transition-property: all;
+}
+
+.gallery-one__single:hover .gallery-one__img img {
+    transform: scale(1.1) rotate(2deg);
+}
+
+.gallery-one__img:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(16, 16, 34, .70);
+    z-index: 2;
+}
