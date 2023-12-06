@@ -65,8 +65,6 @@ def check_in():
         }
     # Absen dibuka
     else:
-        # cek apakah kode berfungsi 
-        print("absen buka")
         # Mengambil Nama dari hasil prediksi
         for name in names:
             # Jika nama bukan unknown
