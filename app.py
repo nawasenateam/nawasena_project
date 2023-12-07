@@ -55,8 +55,6 @@ def check_in():
     # waktu_uji = "07:00:00"
     # Membuat waktu absen dibuka
     if waktu < "08:00:00":
-        # cek apakah kode berfungsi 
-        print("absen tutup")
         response_data = {
             "hasil": "belum buka",
             "message_person": "Absensi belum terbuka",
