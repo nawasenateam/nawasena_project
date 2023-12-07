@@ -74,8 +74,6 @@ def check_in():
                     class_member_names = [row[0] for row in reader]
                 # Mencari Nama dari hasil prediksi pada smiles.csv, dan jika ditemukan
                 if name in class_member_names:
-                    # cek apakah kode berfungsi 
-                    print("nama ditemukan")
                     # Log Buat dikirim ke main.py
                     log = "check in"
                     # Menjalankan fungsi yang ada di main.py
