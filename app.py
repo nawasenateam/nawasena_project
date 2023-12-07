@@ -177,14 +177,13 @@ def delete_testing_files():
         try:
             if os.path.isfile(file_path):
                 os.unlink(file_path)
+            msg = "File di folder Testing telah dihapus."
         except Exception as e:
-            print(f"Failed to delete {file_path}: {e}")
+            msg = f"Failed to delete {file_path}: {e}"
 
-    return jsonify({"message": "File di folder Testing telah dihapus."})
+
+    return jsonify({"message": msg})
 
 if __name__ == '__main__':
-    #run_with_ngrok(app)
-    #app.run()
-    
     #app.run(debug=True)
     app.run(host='0.0.0.0', port=5000, debug=True)
