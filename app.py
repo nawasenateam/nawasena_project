@@ -125,6 +125,7 @@ def check_out():
     response_data = {}
     # Tambahkan data ke file CSV
     for name in names:
+        # Jika nama bukan unknown
         if name !='unknown':
             # Log Buat dikirim ke main.py
             log="check out"
